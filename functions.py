@@ -2,7 +2,7 @@ import json
 
 def get_list_from_json(jsonfile):
     """
-    преобразовываем json файл в list и добавляем большую букву в имени
+    преобразовываем json файл в list
     :param jsonfile:
     :return: list
     """
@@ -61,13 +61,35 @@ def do_title_name(list):
     """
     Функция преобразовывает первую букву в имени в большую
     :param list:
-    :return: bool
+    :return: list
     """
 
     for dict in list:
         dict["poster_name"] = dict["poster_name"].title()
-    return True
+    return list
+
+
+def search_post_by_word(list, word ):
+    """
+    функция перебирает словарь и генериует новый список со свавариями, которые имеют нужное нам вхождение в тесте
+    :param list:
+    :param word: str
+    :return: list
+    """
+    ten_post_list = []
+    for ditc in list:
+
+        if word.lower() in ditc.get("content").lower():
+            ten_post_list.append(ditc)
+            if len(ten_post_list) == 10:
+                break
+
+    return ten_post_list
 
 
 #print(add_count_comments(get_list_from_json("data/data.json"), get_list_from_json("data/comments.json")))
 #print(get_true_word_form(1001))
+#a = "На следующий день"
+
+#print(search_post_by_word((get_list_from_json("data/data.json")), a))
+
