@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "poster_name": "Johnny",
+        "poster_avatar": "https://randus.org/avatars/m/00183c7e3c382499.png",
+        "pic": "https://images.unsplash.com/photo-1592660716763-09efba6db4e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=580&q=80",
+        "content": "Вышел погулять днем, пока все на работе. На улице...",
+        "views_count": 233,
+        "likes_count": 101,
+        "pk": 2,
+        "count_comments": "4 комментария"
+    },
+    {
+        "poster_name": "Larry",
+        "poster_avatar": "https://randus.org/avatars/m/81898dbdbdffdb18.png",
+        "pic": "https://images.unsplash.com/photo-1581235854265-41981cb85c88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+        "content": "Утром проснулся раньше всех – вижу у бассейна на ...",
+        "views_count": 366,
+        "likes_count": 198,
+        "pk": 4,
+        "count_comments": "4 комментария"
+    },
+    {
+        "poster_name": "Leo",
+        "poster_avatar": "https://randus.org/avatars/w/c1819dbdffffff18.png",
+        "pic": "https://images.unsplash.com/photo-1570427968906-5a309bfd7de3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+        "content": "Пурр-пурр! типичная инстарамная фотка с котом , к...",
+        "views_count": 287,
+        "likes_count": 99,
+        "pk": 5,
+        "count_comments": "2 комментария"
+    },
+    {
+        "poster_name": "Larry",
+        "poster_avatar": "https://randus.org/avatars/m/81898dbdbdffdb18.png",
+        "pic": "https://images.unsplash.com/photo-1494952200529-3ceb822a75e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+        "content": "Утром отправились на катере обследовать ближайшие...",
+        "views_count": 141,
+        "likes_count": 45,
+        "pk": 8,
+        "count_comments": "1 комментарий"
+    },
+    {
+        "poster_name": "Hank",
+        "poster_avatar": "https://randus.org/avatars/m/383c7e7e3c3c1818.png",
+        "pic": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+        "content": "Очень красивый закат. Стоило выбраться из дома, ч...",
+        "views_count": 166,
+        "likes_count": 76,
+        "pk": 7,
+        "count_comments": "1 комментарий"
+    }
+]

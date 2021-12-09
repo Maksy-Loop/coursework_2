@@ -27,15 +27,17 @@
     <section class="items">
       <div class="items__item item item--post">
         <div class="item__top">
-          <a href="/user-feed.html" class="item__head">
+          <a href="/users/{{username.lower()}}" class="item__head">
             <div class="item__ava-wrap">
               <img src="{{avatar}}" alt="" class="item__ava" width="47">
             </div>
             <span class="item__username">{{username}}</span>
           </a>
+          <a href="/bookmarks/add/{{postid}}">
           <button type="button" class="item__bookmark-btn">
             <img src="{{ url_for('static', filename='img/bookmark.png') }}" alt="" class="item__bookmark-icon" width="24">
           </button>
+          </a>
         </div>
         <a href="" class="item__post-link">
           <img src="{{picture}}" alt="" width="348" class="item__post-img">
@@ -60,12 +62,12 @@
             </p>
             {% endfor %}
           </div>
-          <form action="/" class="item__comment-form comment-form">
+          <form action="/post/{{postid}}" method="post" class="item__comment-form comment-form">
             <div class="comment-form__input-wrap">
-              <input type="search" class="comment-form__input" placeholder="Ваше имя">
+              <input type="search" name="name_commentator" class="comment-form__input" placeholder="Ваше имя">
             </div>
             <div class="comment-form__input-wrap">
-              <textarea class="comment-form__textarea" placeholder="Ваш комментарий" rows="6"></textarea>
+              <textarea class="comment-form__textarea" name="comment" placeholder="Ваш комментарий" rows="6"></textarea>
             </div>
             <button type="submit" class="comment-form__btn">Отправить</button>
           </form>
