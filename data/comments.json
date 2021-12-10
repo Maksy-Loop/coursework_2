@@ -148,5 +148,35 @@
         "commenter_name": "Макс Константинов",
         "comment": "теперь и тут будут комменты",
         "pk": 25
+    },
+    {
+        "post_id": 8,
+        "commenter_name": "хм",
+        "comment": "классный пост",
+        "pk": 26
+    },
+    {
+        "post_id": 8,
+        "commenter_name": "хм",
+        "comment": "классный пост",
+        "pk": 27
+    },
+    {
+        "post_id": 8,
+        "commenter_name": "лето",
+        "comment": "а почему ошибка?",
+        "pk": 28
+    },
+    {
+        "post_id": 8,
+        "commenter_name": "Макс",
+        "comment": "а вот сейчас все получиться)",
+        "pk": 29
+    },
+    {
+        "post_id": 1,
+        "commenter_name": "Ліза",
+        "comment": "Привет",
+        "pk": 30
     }
 ]

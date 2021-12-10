@@ -107,7 +107,7 @@ def add_tag_link(data):
         for j, word in enumerate(text):
             if word.startswith("#"):
                 word = word.replace("#", "")
-                text[j] = f'<a href="tag/{word}">#{word}</a>'
+                text[j] = f'<a href="/tag/{word}">#{word}</a>'
 
         dict["content"] = " ".join(text)
 
@@ -129,14 +129,15 @@ def add_value(list, jsonfile):
 
 def seach_post_by_tag(data, tag):
     """
-    функция которая формирует список словарей только если dict["content"] есть тег
+    функция которая формирует список словарей только если в тексте есть тег
     :param data:
     :param tag:
     :return:
     """
+    tag = f'#{tag}'
     new_data = []
     for dict in data:
-        if tag in dict["content"]:
+        if tag.lower() in dict["content"].lower():
             new_data.append(dict)
 
     return new_data
@@ -151,4 +152,4 @@ def seach_post_by_tag(data, tag):
 
 #print(add_tag_link(get_list_from_json("data/data.json")))
 
-#print(seach_post_by_tag(get_list_from_json("data/data.json"), "днем"))
+print(seach_post_by_tag(get_list_from_json("data/data.json"), "кот"))

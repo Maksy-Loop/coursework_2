@@ -53,11 +53,15 @@ def page_post(id):
                     comments.append(dict_comment)
                     add_value(comments, COMMENTS_PATH)
 
-                abort(400)
-
-            return render_template('post.html', username = username, avatar = avatar, picture=picture, content = content,
+                    return render_template('post.html', username = username, avatar = avatar, picture=picture, content = content,
                                       views_count = views_count, count_comments = count_comments, postid = postid,
                                        comments = comments)
+
+                abort(400)
+
+            return render_template('post.html', username=username, avatar=avatar, picture=picture, content=content,
+                                   views_count=views_count, count_comments=count_comments, postid=postid,
+                                   comments=comments)
 
     abort(404)
 
@@ -129,10 +133,11 @@ def page_bookmarks():
 
 @app.route('/tag/<tagname>')
 def page_search_tag(tagname):
-    data_list = cut_50_symbol(do_title_name(add_tag_link(get_list_from_json(DATA_PATH))))
+    data_list = do_title_name(add_tag_link(get_list_from_json(DATA_PATH)))
     comments = get_list_from_json(COMMENTS_PATH)
     add_count_comments(data_list, comments)
     data = seach_post_by_tag(data_list, tagname)
+    cut_50_symbol(data)
     if len(data) >= 1:
         return render_template('tag.html', data = data, tag = tagname)
     abort(404)
