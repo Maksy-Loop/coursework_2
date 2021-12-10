@@ -142,14 +142,10 @@ def seach_post_by_tag(data, tag):
 
     return new_data
 
-
 #print(add_count_comments(get_list_from_json("data/data.json"), get_list_from_json("data/comments.json")))
 #print(get_true_word_form(1001))
 #a = "На следующий день"
 #print(search_post_by_word((get_list_from_json("data/data.json")), a))
-
 #print(sort_post_by_poster_name(get_list_from_json("data/data.json"), "leo"))
-
 #print(add_tag_link(get_list_from_json("data/data.json")))
-
-print(seach_post_by_tag(get_list_from_json("data/data.json"), "кот"))
+#print(seach_post_by_tag(get_list_from_json("data/data.json"), "кот"))

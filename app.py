@@ -142,5 +142,5 @@ def page_search_tag(tagname):
         return render_template('tag.html', data = data, tag = tagname)
     abort(404)
 
-
-app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
